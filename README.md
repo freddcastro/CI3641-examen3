@@ -25,6 +25,6 @@ El lenguage escogido para la implementación es Ballerina.io.
 3. Ballerina.io, al ser un lenguaje de programación diseñado para la integración de sistemas, ofrece una amplia gama de tipos de datos, desde los primitivos (enteros, flotantes, booleanos) hasta los más complejos como estructuras, uniones y tablas. Sin embargo, también contiene otros tipos de datos pertinentes al uso específico del lenguaje como representaciones a HTTP, Querys, etc. Que no necesariamente representan un álgebra, por lo que depende; si nos enfocamos en el subconjunto que contiene las estructuras necesarias, sí es un algebra, pero al considerar el resto de integraciones dentro del lenguaje, no necesariamente puede serlo.
    - **Tipo Producto**: En Ballerina.io, las estructuras y tuplas representan el tipo producto. Cada campo de una estructura puede verse como una proyección del tipo producto.
    - **Tipo Suma**: Las uniones en Ballerina.io corresponden al tipo suma. Una unión permite que una variable tenga uno de varios tipos posibles. Es similar a un tipo algebraico de datos en lenguajes funcionales.
-   - **Tipo Cero (Neutro de la Suma)**: NEl tipo nil en Ballerina actúa como el tipo cero, representando la ausencia de un valor.
+   - **Tipo Cero (Neutro de la Suma)**: El tipo nil en Ballerina actúa como el tipo cero, representando la ausencia de un valor.
    - **Tipo Uno (Neutro del Producto)**: El tipo unit () en Ballerina.io puede considerarse como el tipo uno, ya que representa un valor único y no tiene campos.
 
