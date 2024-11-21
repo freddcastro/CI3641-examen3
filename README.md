@@ -29,6 +29,22 @@ El lenguage escogido para la implementación es Ballerina.io.
    - **Tipo Uno (Neutro del Producto)**: El tipo unit () en Ballerina.io puede considerarse como el tipo uno, ya que representa un valor único y no tiene campos.
 
 ---
+### Pregunta 2
+Para este caso, se usó Python como lenguaje para la respuesta, `coverage.py` como herramienta para el análisis de cobertura y `pytest` como herramienta para la suit de testeo del programa.
+
+La generación del informe de cobertura del código se hizo de la siguiente forma:
+```bash
+ coverage run -m pytest
+ coverage report
+```
+Y la generación del archivo html correspondiente al informe, para mejor visualización, se hizo de la siguiente manera:
+```bash
+ coverage html
+```
+
+Lo que generó el archivo `index.html` y sus dependencias (estilo, interactividad, etc.) en la carpeta `htmlcov`
+
+---
 ## Pregunta 4
 Primeramente, presentamos las gráficas de las ejecuciones.
 Esta gráfica corresponde al almacenamiento dinámico de la matriz.![image](https://github.com/user-attachments/assets/f40f1495-28e2-4d69-b66b-02c24c4dd06a)
