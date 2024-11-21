@@ -28,3 +28,30 @@ El lenguage escogido para la implementación es Ballerina.io.
    - **Tipo Cero (Neutro de la Suma)**: El tipo nil en Ballerina actúa como el tipo cero, representando la ausencia de un valor.
    - **Tipo Uno (Neutro del Producto)**: El tipo unit () en Ballerina.io puede considerarse como el tipo uno, ya que representa un valor único y no tiene campos.
 
+---
+## Pregunta 4
+Primeramente, presentamos las gráficas de las ejecuciones.
+Esta gráfica corresponde al almacenamiento dinámico de la matriz.![image](https://github.com/user-attachments/assets/6c841fda-871d-446c-b968-e910785ef8d0)
+Donde podemos observar que se hicieron las combinaciones hasta la quinta potencia de 10. A partir de ahí, el tiempo de ejecución se hacía bastante elevado por lo que se descartaron dichas opciones, sin embargo, es importante notar que en términos de espacio no hubo error al tratar de crear el espacio en memoria. También, se promediaron los valores de cada tipo de matriz, para poder graficar de forma más efectiva el tiempo en cada caso.
+
+Y esta gráfica corresponde al almacenamiento estático de la matriz.![image](https://github.com/user-attachments/assets/d4bb78dd-ccb7-4089-a75a-fbbe3489e3f2)
+
+En este caso, las combinaciones fueron muchas menos, pues la memoria sólo puede usarse de esta manera hasta la tercera potencia de 10. En este caso, no se promediaron los resultados, sino que se almacenaron directamente en variables distintas para graficarlas todas.
+
+**¿Hay alguna diferencia en tiempo de ejecución entre las dos implementaciones propuestas?**
+Lamentablemente, para las combinaciones posibles de almacenar en memoria de forma estática, los resultados están en el mismo orden. Así, no podemos argumentar que realmente exista una diferencia en tiempo de ejecución.
+
+
+**¿La forma de la matriz tiene algún efecto sobre el tiempo de la ejecución?**
+
+Efecto de la Forma de la Matriz:
+- Matrices Cuadradas: En matrices cuadradas (por ejemplo, 1000x1000), el acceso por fila y el acceso por columna pueden tener tiempos de ejecución más similares, pero el acceso por fila sigue siendo más eficiente debido a la localidad espacial y el acceso a la disposición de memoria de C, que es row-major.
+- Matrices Rectangulares:
+    - En matrices rectangulares donde una dimensión es mucho mayor que la otra (por ejemplo, 100x10000 o 10000x100), la diferencia en tiempos de ejecución puede ser más pronunciada.
+        - Si la matriz es muy ancha (muchas columnas), el acceso por fila sigue siendo eficiente, pero el acceso por columna puede resultar en muchos fallos de caché.
+        - Si la matriz es muy alta (muchas filas), el acceso por columna puede ser más eficiente que en una matriz muy ancha, pero aún así, el acceso por fila generalmente será más rápido.
+
+**¿Los tiempos de ejecución cambian al ejecutar más de una vez la misma configuración?**
+
+**¿Afecta a los tiempos de ejecución si la matriz se declara de forma global (memoria estática) o local (pila)?**
+
