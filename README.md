@@ -38,12 +38,20 @@ Y esta gráfica corresponde al almacenamiento estático de la matriz.![image](ht
 
 En este caso, las combinaciones fueron muchas menos, pues la memoria sólo puede usarse de esta manera hasta la tercera potencia de 10. En este caso, no se promediaron los resultados, sino que se almacenaron directamente en variables distintas para graficarlas todas.
 
-**¿Hay alguna diferencia en tiempo de ejecución entre las dos implementaciones pro-
-puestas?**
-Lamentablemente, para las combinaciones posibles de almacenar en memoria, es decir, las combinaciones posibles hasta la tercera potencia de 10, no existe una 
+**¿Hay alguna diferencia en tiempo de ejecución entre las dos implementaciones propuestas?**
+Lamentablemente, para las combinaciones posibles de almacenar en memoria de forma estática, los resultados están en el mismo orden. Así, no podemos argumentar que realmente exista una diferencia en tiempo de ejecución.
 
 
 **¿La forma de la matriz tiene algún efecto sobre el tiempo de la ejecución?**
+
+Efecto de la Forma de la Matriz:
+- Matrices Cuadradas: En matrices cuadradas (por ejemplo, 1000x1000), el acceso por fila y el acceso por columna pueden tener tiempos de ejecución más similares, pero el acceso por fila sigue siendo más eficiente debido a la localidad espacial y el acceso a la disposición de memoria de C, que es row-major.
+- Matrices Rectangulares:
+    - En matrices rectangulares donde una dimensión es mucho mayor que la otra (por ejemplo, 100x10000 o 10000x100), la diferencia en tiempos de ejecución puede ser más pronunciada.
+        - Si la matriz es muy ancha (muchas columnas), el acceso por fila sigue siendo eficiente, pero el acceso por columna puede resultar en muchos fallos de caché.
+        - Si la matriz es muy alta (muchas filas), el acceso por columna puede ser más eficiente que en una matriz muy ancha, pero aún así, el acceso por fila generalmente será más rápido.
+
 **¿Los tiempos de ejecución cambian al ejecutar más de una vez la misma configuración?**
+
 **¿Afecta a los tiempos de ejecución si la matriz se declara de forma global (memoria estática) o local (pila)?**
 
