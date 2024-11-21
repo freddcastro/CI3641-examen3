@@ -27,14 +27,19 @@ int sumaPorColumna(int N, int M, int matriz[N][M]) {
 }
 int main() {
 
-    for (int i = 2; i <= 3; i++)
+    for (int i = 2; i <= 4; i++)
     {
-        for (int j = 2; j <= 3; j++)
+        for (int j = 2; j <= 4; j++)
         {
             int N1 = (int)pow(10, i);
             int M1 = (int)pow(10, j);
             
             int matriz[N1][M1];
+
+            // int **matriz = (int **)malloc(N1 * sizeof(int *));
+            // for (int i = 0; i < N1; i++) {
+            //     matriz[i] = (int *)malloc(M1 * sizeof(int));
+            // }
             
             printf("Matriz de %d x %d\n", N1, M1);
 
