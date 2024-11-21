@@ -28,3 +28,12 @@ El lenguage escogido para la implementación es Ballerina.io.
    - **Tipo Cero (Neutro de la Suma)**: El tipo nil en Ballerina actúa como el tipo cero, representando la ausencia de un valor.
    - **Tipo Uno (Neutro del Producto)**: El tipo unit () en Ballerina.io puede considerarse como el tipo uno, ya que representa un valor único y no tiene campos.
 
+---
+## Pregunta 4
+Primeramente, presentamos las gráficas de las ejecuciones.
+Esta gráfica corresponde al almacenamiento dinámico de la matriz.![image](https://github.com/user-attachments/assets/6c841fda-871d-446c-b968-e910785ef8d0)
+Donde podemos observar que se hicieron las combinaciones hasta la quinta potencia de 10. A partir de ahí, el tiempo de ejecución se hacía bastante elevado por lo que se descartaron dichas opciones, sin embargo, es importante notar que sí se pudieron 
+
+Y esta gráfica corresponde al almacenamiento estático de la matriz.![image](https://github.com/user-attachments/assets/78ea55e8-61a2-40c4-8d04-e23a603e6c0d)
+
+
