@@ -31,7 +31,8 @@ El lenguage escogido para la implementación es Ballerina.io.
 ---
 ## Pregunta 4
 Primeramente, presentamos las gráficas de las ejecuciones.
-Esta gráfica corresponde al almacenamiento dinámico de la matriz.![image](https://github.com/user-attachments/assets/6c841fda-871d-446c-b968-e910785ef8d0)
+Esta gráfica corresponde al almacenamiento dinámico de la matriz.![image](https://github.com/user-attachments/assets/f40f1495-28e2-4d69-b66b-02c24c4dd06a)
+
 Donde podemos observar que se hicieron las combinaciones hasta la quinta potencia de 10. A partir de ahí, el tiempo de ejecución se hacía bastante elevado por lo que se descartaron dichas opciones, sin embargo, es importante notar que en términos de espacio no hubo error al tratar de crear el espacio en memoria. También, se promediaron los valores de cada tipo de matriz, para poder graficar de forma más efectiva el tiempo en cada caso.
 
 Y esta gráfica corresponde al almacenamiento estático de la matriz.![image](https://github.com/user-attachments/assets/d4bb78dd-ccb7-4089-a75a-fbbe3489e3f2)
@@ -52,6 +53,8 @@ Efecto de la Forma de la Matriz:
         - Si la matriz es muy alta (muchas filas), el acceso por columna puede ser más eficiente que en una matriz muy ancha, pero aún así, el acceso por fila generalmente será más rápido.
 
 **¿Los tiempos de ejecución cambian al ejecutar más de una vez la misma configuración?**
+Sí, al observar las gráficas vemos que existe una diferencia del tiempo en la primera y la última iteración, siendo la diferencia más notable para más cantidad de memoria. 
 
 **¿Afecta a los tiempos de ejecución si la matriz se declara de forma global (memoria estática) o local (pila)?**
+En teoría, para tamaños más pequeños, el almacenar la matriz de forma global ayudaría con los tiempos de ejecución (claro, para los tamaños que sí quepan en memoria) ya que la dirección es fija y se accede de forma más rápida. Sin embargo, también puede ser un ineficiente uso de la memoria. Ahora, para tiempos más grandes, el amacenamiento dinámico, a la hora de ejecutar por filas, es muchísimo, más rápido por la reasignación de la memoria.
 
