@@ -31,7 +31,6 @@ S1 = 4
 S2 = (U1 - L1 + 1) * S1
 S3 = (U2 - L2 + 1) * S2
 
-
 # Calculamos la direccción M[I][J][K] en column_major
 column_major = ((I - L1) * S1) + ((J - L2) *  S2) + ((K - L3) * S3)
 print("el column major es")
