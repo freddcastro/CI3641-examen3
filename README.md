@@ -34,7 +34,16 @@ Primeramente, presentamos las gráficas de las ejecuciones.
 Esta gráfica corresponde al almacenamiento dinámico de la matriz.![image](https://github.com/user-attachments/assets/6c841fda-871d-446c-b968-e910785ef8d0)
 Donde podemos observar que se hicieron las combinaciones hasta la quinta potencia de 10. A partir de ahí, el tiempo de ejecución se hacía bastante elevado por lo que se descartaron dichas opciones, sin embargo, es importante notar que en términos de espacio no hubo error al tratar de crear el espacio en memoria. También, se promediaron los valores de cada tipo de matriz, para poder graficar de forma más efectiva el tiempo en cada caso.
 
-Y esta gráfica corresponde al almacenamiento estático de la matriz.![image](https://github.com/user-attachments/assets/78ea55e8-61a2-40c4-8d04-e23a603e6c0d)
+Y esta gráfica corresponde al almacenamiento estático de la matriz.![image](https://github.com/user-attachments/assets/d4bb78dd-ccb7-4089-a75a-fbbe3489e3f2)
+
 En este caso, las combinaciones fueron muchas menos, pues la memoria sólo puede usarse de esta manera hasta la tercera potencia de 10. En este caso, no se promediaron los resultados, sino que se almacenaron directamente en variables distintas para graficarlas todas.
 
+**¿Hay alguna diferencia en tiempo de ejecución entre las dos implementaciones pro-
+puestas?**
+Lamentablemente, para las combinaciones posibles de almacenar en memoria, es decir, las combinaciones posibles hasta la tercera potencia de 10, no existe una 
+
+
+**¿La forma de la matriz tiene algún efecto sobre el tiempo de la ejecución?**
+**¿Los tiempos de ejecución cambian al ejecutar más de una vez la misma configuración?**
+**¿Afecta a los tiempos de ejecución si la matriz se declara de forma global (memoria estática) o local (pila)?**
 
