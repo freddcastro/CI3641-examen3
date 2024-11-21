@@ -32,8 +32,9 @@ El lenguage escogido para la implementación es Ballerina.io.
 ## Pregunta 4
 Primeramente, presentamos las gráficas de las ejecuciones.
 Esta gráfica corresponde al almacenamiento dinámico de la matriz.![image](https://github.com/user-attachments/assets/6c841fda-871d-446c-b968-e910785ef8d0)
-Donde podemos observar que se hicieron las combinaciones hasta la quinta potencia de 10. A partir de ahí, el tiempo de ejecución se hacía bastante elevado por lo que se descartaron dichas opciones, sin embargo, es importante notar que sí se pudieron 
+Donde podemos observar que se hicieron las combinaciones hasta la quinta potencia de 10. A partir de ahí, el tiempo de ejecución se hacía bastante elevado por lo que se descartaron dichas opciones, sin embargo, es importante notar que en términos de espacio no hubo error al tratar de crear el espacio en memoria. También, se promediaron los valores de cada tipo de matriz, para poder graficar de forma más efectiva el tiempo en cada caso.
 
 Y esta gráfica corresponde al almacenamiento estático de la matriz.![image](https://github.com/user-attachments/assets/78ea55e8-61a2-40c4-8d04-e23a603e6c0d)
+En este caso, las combinaciones fueron muchas menos, pues la memoria sólo puede usarse de esta manera hasta la tercera potencia de 10. En este caso, no se promediaron los resultados, sino que se almacenaron directamente en variables distintas para graficarlas todas.
 
 
